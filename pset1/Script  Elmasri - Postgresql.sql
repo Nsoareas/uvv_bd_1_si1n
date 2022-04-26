@@ -1,4 +1,7 @@
-/* Para a criação da base de dados e schema:
+/* Observação: Fiquei em dúvida se você já deixaria um ambiente preparado para só colocar os scripts de criação 
+de tabela ou se queria também os scripts de criação de banco de dados e esquema, então deixei no comentário e 
+peço que caso seja necessário use o script do comentário abaixo para criar o BD e o esquema.
+Para a criação da base de dados e schema:
 CREATE DATABASE uvv;
 COMMENT ON DATABASE uvv
     IS 'criação da database uvv.';
