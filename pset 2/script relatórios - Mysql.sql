@@ -127,9 +127,9 @@ group by nome_departamento;
 select CONCAT(f.nome, ' ', f.nome_meio, ' ', f.ultimo_nome) as funcionario, 
 dp.nome_departamento as departamento,
 p.nome_projeto as projeto
-    from funcionario as f
-    inner join departamento as dp on (f.numero_departamento = dp.numero_departamento)
-    left outer join projeto as p on (p.numero_departamento = dp.numero_departamento)
-    inner join trabalha_em as t on (f.cpf = t.cpf_funcionario)
-    group by funcionario, nome_projeto
-    order by nome_projeto;
+from funcionario as f
+inner join departamento as dp on (f.numero_departamento = dp.numero_departamento)
+left outer join projeto as p on (p.numero_departamento = dp.numero_departamento)
+inner join trabalha_em as t on (f.cpf = t.cpf_funcionario)
+group by funcionario, nome_projeto
+order by nome_projeto;
